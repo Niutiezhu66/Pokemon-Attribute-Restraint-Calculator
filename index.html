@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝可梦属性相性查询</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50">
+    <div>
+        <div class="flex flex-col items-center w-full">
+            宝可梦属性相性查询
+            <div class="border border-black m-0 p-1 w-1/2 min-w-80 max-w-80 flex justify-evenly rounded-xl shadow-lg text-xs sm:text-sm sm:px-5"> 
+                <ul class="type-container"> 
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Normal" hidden><img src="icons/normal.svg"> 一般</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Fire" hidden><img src="icons/fire.svg"> 火</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Water" hidden><img src="icons/water.svg"> 水</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Electric" hidden><img src="icons/electric.svg"> 电</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Grass" hidden><img src="icons/grass.svg"> 草</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Ice" hidden><img src="icons/ice.svg"> 冰</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Fighting" hidden><img src="icons/fighting.svg"> 格斗</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Poison" hidden><img src="icons/poison.svg"> 毒</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Ground" hidden><img src="icons/ground.svg"> 地面</li>
+                </ul>
+                <ul class="type-container">
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Flying" hidden><img src="icons/flying.svg"> 飞行</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Psychic" hidden><img src="icons/psychic.svg"> 超能力</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Bug" hidden><img src="icons/bug.svg"> 虫</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Rock" hidden><img src="icons/rock.svg"> 岩石</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Ghost" hidden><img src="icons/ghost.svg"> 幽灵</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Dragon" hidden><img src="icons/dragon.svg"> 龙</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Dark" hidden><img src="icons/dark.svg"> 恶</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Steel" hidden><img src="icons/steel.svg"> 钢</li>
+                    <li><input class="accent-[#FF0000]" name="defending-pokemon-type" type="checkbox" value="Fairy" hidden><img src="icons/fairy.svg"> 妖精</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="border border-black rounded-xl text-xs sm:text-sm pt-4 p-3 max-w-80 mx-auto mt-4 mb-8 text-center shadow-lg bg-white">
+        <p class="mb-3 italic animate-bounce" id="instruction-field">请选择一个或两个防御属性！</p>
+        <div id="result-container" class="text-left font-mono">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

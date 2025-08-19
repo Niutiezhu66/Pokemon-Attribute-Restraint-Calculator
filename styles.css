@@ -1,0 +1,36 @@
+.type-container li input{
+    margin: 10px;
+}
+.type-container img{
+    width: 20px;
+    display: inline-block;
+    margin-right: 2px;
+}
+#result-container li {
+    display: inline-block;
+    width: 70px;
+    vertical-align: top; 
+
+  }
+  
+  #result-container li img {
+    display: inline-block;
+    vertical-align: middle; 
+  }
+  
+
+  .type-container li {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .type-container li.selected {
+    background-color: rgba(255, 0, 0, 0.2); 
+  }
+  
+  .type-container li:hover {
+    background-color: rgba(0, 0, 0, 0.05); 
+  }
+  
